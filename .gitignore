@@ -3,3 +3,8 @@
 ################################################################################
 
 /StubHttpServer/.vs/StubHttpServer/v16
+/StubHttpServer/StubHttpServer/bin
+/StubHttpServer/StubHttpServer/obj
+/StubHttpServer/bin
+/.vs/StubHttpServer/v16/Server/sqlite3
+/StubHttpServer/obj
