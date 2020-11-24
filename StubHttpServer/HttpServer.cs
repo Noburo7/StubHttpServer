@@ -42,6 +42,8 @@ namespace StubHttpServer
                         {
                             //Process for api1
                             Console.WriteLine("API1 was called.");
+                            res.Headers.Add("Access-Control-Allow-Origin", "*");
+                            res.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
                             res.StatusCode = 200;
                             byte[] content = Encoding.UTF8.GetBytes("Hello API1");
                             res.OutputStream.Write(content, 0, content.Length);
@@ -50,6 +52,8 @@ namespace StubHttpServer
                         {
                             //Process for api2
                             Console.WriteLine("API2 was called.");
+                            res.Headers.Add("Access-Control-Allow-Origin", "*");
+                            res.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
                             res.StatusCode = 200;
                             byte[] content = Encoding.UTF8.GetBytes("Hello API2");
                             res.OutputStream.Write(content, 0, content.Length);
